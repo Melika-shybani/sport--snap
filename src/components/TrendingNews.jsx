@@ -85,26 +85,25 @@ export default function Trendingitem() {
 
   return (
     <>
-         <div className='flex flex-row-reverse  items-center justify-center container gap-7  px-7 py-5'>
+         <div className='flex lg:flex-row-reverse bg-[#EBEEF3] flex-col items-center justify-center container gap-7  px-7 py-5'>
 
             {/* سمت راست */}
-            <div>
+            <div className='w-[] '>
                 {newsData.filter((news)=> news.id ===6 ).map((news)=>(
-                    <div className='relative  w-[480px] h-[470px] bg-contain bg-no-repeat z-10 ' key={news.id} style={{backgroundImage:`url(${news.image})`}}>
+                    <div className='relative  w-full h-full  md:h-[470px] bg-contain bg-no-repeat z-10 ' key={news.id} style={{backgroundImage:`url(${news.image})`}}>
                         <div className=' flex flex-col justify-between '>
-                            <div className="absolute left-0 inset-0 z-20 bg-black opacity-60 w-[440px]"></div>
-                            <div className='flex flex-col justify-between p-5  mt-7 gap-48 z-40  h-[420px] '>
-                                <button className='z-40 border-2 text-[#EBEEF3] border-[#EBEEF3] w-[100px] h-[38px] rounded-[3px]'>{news.category}</button>
+                            <div className="absolute inset-0 w-[440px] z-20 bg-black opacity-60 "></div>
+                            <div className='flex flex-col justify-between px-5  mt-5 w-[378px] gap-48 z-40 md:h-[430px]'>
+                                <button className='z-40 border-2 text-[#EBEEF3] border-[#EBEEF3] w-[100px] h-[38px] rounded-[3px] hover:bg-[#EB5E28]/70 transition'>{news.category}</button>
                                 <div>
                                 <span className='text-[#FFFFFF]/80 text-xl'>{news.date}</span>
-                                <h3 className='text-[#FFFFFF]/90 text-2xl font-semibold w-[350px]'>{news.title}</h3>
+                                <h3 className='text-[#FFFFFF]/90 text-xl sm:text-2xl font-semibold w-full sm:w-[350px]'>{news.title}</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-
             {/* سمت چپ  */}
 
             <div className='flex flex-col gap-3 bg-amber-600'>
