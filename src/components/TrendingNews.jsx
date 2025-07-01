@@ -88,7 +88,7 @@ export default function Trendingitem() {
          <div className='flex lg:flex-row-reverse bg-[#EBEEF3] flex-col items-center justify-center container gap-7  px-7 py-5'>
 
             {/* سمت راست */}
-            <div className='w-[] '>
+            {/* <div className='w-[] '>
                 {newsData.filter((news)=> news.id ===6 ).map((news)=>(
                     <div className='relative  w-full h-full  md:h-[470px] bg-contain bg-no-repeat z-10 ' key={news.id} style={{backgroundImage:`url(${news.image})`}}>
                         <div className=' flex flex-col justify-between '>
@@ -103,7 +103,7 @@ export default function Trendingitem() {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
             {/* سمت چپ  */}
 
             <div className='flex flex-col gap-3 bg-amber-600'>
