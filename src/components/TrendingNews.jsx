@@ -106,7 +106,7 @@ export default function Trendingitem() {
             </div> */}
             {/* سمت چپ  */}
 
-            <div className='flex flex-col gap-3 bg-amber-600'>
+            <div className='flex flex-col gap-3 '>
                 {itemData.filter((item)=> item.id >= 3 && item.id <= 5  ).map((item)=>(
 
                     <div className='w-[500px] h-[150px] flex '>
