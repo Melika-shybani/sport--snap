@@ -11,7 +11,7 @@ import ctImg4 from "../assets/ct4.png";
 const Category = () => {
     return (
         <div className=' flex flex-col  py-8'>
-            <h4 className='text-center py-5 text-3xl text-[#262626]/70 font-bold'>----- Category -----</h4>
+            <h4 className='text-center py-5 text-3xl text-[#262626]/70 font-bold'>Category</h4>
             <div className='flex justify-center items-center gap-7 md:gap-4 py-4 flex-wrap '>
                 <div className='md:flex md:flex-col md:items-center'>
                     <div className='w-[290px] h-[116px] bg-[#EBEEF3] flex items-center justify-center my-4 md:w-full md:max-w-[290px]'>

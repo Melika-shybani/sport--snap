@@ -14,7 +14,7 @@ export default function Hero() {
 
             {/* متن سمت چپ  */}
    
-                <img className='w-[370px]  lg:w-[470px] h-[300px] ps-15' src={HeroText} alt="HeroText" />
+                <img className='w-[550px]  lg:w-[470px] h-[300px] ps-8' src={HeroText} alt="HeroText" />
         
             {/* تصویر وسط صفحه */}
             <div className='flex flex-col'>
