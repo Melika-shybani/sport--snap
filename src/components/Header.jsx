@@ -20,7 +20,7 @@ export default function Header() {
                </ul>
 
                <div className="hidden lg:flex ">
-                <button className="cursor-pointer bg-[#EB5E28]/80 text-amber-50 font-semibold flex gap-1 rounded-2xl items-center py-2 px-4">
+                <button className="cursor-pointer bg-[#EB5E28]/80 text-amber-50 font-semibold flex gap-1 rounded-[15px] items-center py-2 px-4">
                     <CiSearch size={24}/>Search
                 </button>
                </div>
