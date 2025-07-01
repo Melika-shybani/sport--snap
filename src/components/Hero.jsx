@@ -10,11 +10,11 @@ export default function Hero() {
     const filteredNews=newsData.filter(card=> card.id===1 || card.id===2 );
   return (
     <>
-        <div className='bg-left bg-no-repeat w-[100vw] overflow-hidden bg-amber-100  flex gap-5 m-auto justify-center  flex-wrap  px-7 py-16 ' style={{backgroundImage:`url(${basket})` }}>
+        <div className='bg-left bg-no-repeat w-[100vw] overflow-hidden flex gap-5 m-auto justify-center  flex-wrap  px-7 py-16 ' style={{backgroundImage:`url(${basket})` }}>
 
             {/* متن سمت چپ  */}
    
-                <img className='w-[550px]  lg:w-[470px] h-[300px] ps-8' src={HeroText} alt="HeroText" />
+                <img className='w-[550px]  lg:w-[470px] h-[300px] ps-8 my-10' src={HeroText} alt="HeroText" />
         
             {/* تصویر وسط صفحه */}
             <div className='flex flex-col'>

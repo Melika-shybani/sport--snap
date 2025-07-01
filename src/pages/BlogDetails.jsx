@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import newsData from "../data.js";
+import Header from '../components/Header.jsx';
 
 const BlogDetails = () => {
     const { id } = useParams();
@@ -11,6 +12,8 @@ const BlogDetails = () => {
     const relatedNews = newsData.filter((item) => item.category === news.category && item.id !== news.id);
 
     return (
+        <>
+        <Header/>
         <div className='flex justify-center mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32
          my-8 sm:my-12 md:my-16 lg:my-20 xl:my-32'>
             <div className='w-full max-w-[900px]'>
@@ -29,48 +32,48 @@ const BlogDetails = () => {
                     <img 
                         src={news.image} 
                         alt={news.title} 
-                        className="rounded-md w-full object-cover h-[200px] sm:h-[300px] md:h-[400px]" 
+                        className="rounded-md w-full object-contain h-[300px] sm:h-[300px] md:h-[400px]" 
                     />
                 </div>
 
                 {/* Content */}
-                <div className="prose max-w-none">
-                    <h4 className="text-lg sm:text-xl font-semibold my-3 sm:my-4">Introduction</h4>
-                    <p className="text-sm sm:text-base">{news.introduction}</p>
+                <div className="prose max-w-none ">
+                    <h4 className="text-lg sm:text-xl font-semibold my-3 sm:my-4 text-[#EB5E28]">Introduction</h4>
+                    <p className="text-sm sm:text-base text-black/70">{news.introduction}</p>
 
                     {/* Content Parts */}
                     {news.desc_part1 && news.title_part1 && (
                         <div className="my-4 sm:my-5">
-                            <h4 className="font-semibold text-base sm:text-lg">{news.title_part1}</h4>
-                            <p className="text-sm sm:text-base">{news.desc_part1}</p>
+                            <h4 className="font-semibold text-base sm:text-lg text-[#EB5E28]">{news.title_part1}</h4>
+                            <p className="text-sm sm:text-base text-black/70">{news.desc_part1}</p>
                         </div>
                     )}
 
                     {news.desc_part2 && news.title_part2 && (
                         <div className="my-4 sm:my-5">
-                            <h4 className="font-semibold text-base sm:text-lg">{news.title_part2}</h4>
-                            <p className="text-sm sm:text-base">{news.desc_part2}</p>
+                            <h4 className="font-semibold text-base sm:text-lg text-[#EB5E28]">{news.title_part2}</h4>
+                            <p className="text-sm sm:text-base text-black/70">{news.desc_part2}</p>
                         </div>
                     )}
 
                     {news.desc_part3 && news.title_part3 && (
                         <div className="my-4 sm:my-5">
-                            <h4 className="font-semibold text-base sm:text-lg">{news.title_part3}</h4>
-                            <p className="text-sm sm:text-base">{news.desc_part3}</p>
+                            <h4 className="font-semibold text-base sm:text-lg text-[#EB5E28]">{news.title_part3}</h4>
+                            <p className="text-sm sm:text-base text-black/70">{news.desc_part3}</p>
                         </div>
                     )}
 
                     {news.desc_part4 && news.title_part4 && (
                         <div className="my-4 sm:my-5">
-                            <h4 className="font-semibold text-base sm:text-lg">{news.title_part4}</h4>
-                            <p className="text-sm sm:text-base">{news.desc_part4}</p>
+                            <h4 className="font-semibold text-base sm:text-lg text-[#EB5E28]">{news.title_part4}</h4>
+                            <p className="text-sm sm:text-base text-black/70">{news.desc_part4}</p>
                         </div>
                     )}
 
                     {news.desc_part5 && news.title_part5 && (
                         <div className="my-4 sm:my-5">
-                            <h4 className="font-semibold text-base sm:text-lg">{news.title_part5}</h4>
-                            <p className="text-sm sm:text-base">{news.desc_part5}</p>
+                            <h4 className="font-semibold text-base sm:text-lg text-[#EB5E28]">{news.title_part5}</h4>
+                            <p className="text-sm sm:text-base text-black/70">{news.desc_part5}</p>
                         </div>
                     )}
                 </div>
@@ -116,6 +119,7 @@ const BlogDetails = () => {
                 )}
             </div>
         </div>
+        </>
     );
 }
 
