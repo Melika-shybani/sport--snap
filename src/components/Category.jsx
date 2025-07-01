@@ -10,16 +10,16 @@ import ctImg4 from "../assets/ct4.png";
 
 const Category = () => {
     return (
-        <div className='mx-32 mt-72 md:mx-4 md:mt-32'>
-            <h4 className='ml-[-100px] mb-2 text-[28px] leading-[38px]  md:ml-22'>Category</h4>
-            <div className='flex flex-col lg:flex-row justify-center items-center gap-7 md:gap-4'>
+        <div className=' flex flex-col  py-8'>
+            <h4 className='text-center py-5 text-3xl text-[#262626]/70 font-bold'>----- Category -----</h4>
+            <div className='flex justify-center items-center gap-7 md:gap-4 py-4 flex-wrap '>
                 <div className='md:flex md:flex-col md:items-center'>
                     <div className='w-[290px] h-[116px] bg-[#EBEEF3] flex items-center justify-center my-4 md:w-full md:max-w-[290px]'>
                         <img className='w-[203px] h-[75px] object-contain' src={ctImg1} />
                     </div>
                     <img className='w-[270px] h-[288px] object-contain md:w-full md:max-w-[270px]' src={catImg1} />
                 </div>
-                <div className='md:flex md:flex-col md:items-center'>
+                <div className='md:flex md:flex-col md:items-center  '>
                     <img className='w-[270px] h-[235px] object-contain md:w-full md:max-w-[270px]' src={catImg2} />
                     <div className='w-[270px] h-[116px] bg-[#EBEEF3] flex items-center justify-center my-4 md:w-full md:max-w-[270px]'>
                         <img className='w-[203px] h-[75px] object-contain' src={ctImg2} />
@@ -31,9 +31,9 @@ const Category = () => {
                     </div>
                     <img className='w-[270px] h-[288px] object-contain md:w-full md:max-w-[270px]' src={catImg3} />
                 </div>
-                <div className='md:flex md:flex-col md:items-center'>
-                    <img className='w-[270px] h-[286px] object-contain md:w-full md:max-w-[270px]' src={catImg4} />
-                    <div className='w-[270px] h-[118px] bg-[#EBEEF3] flex items-center justify-center my-4 md:w-full md:max-w-[270px]'>
+                <div className='md:flex md:flex-col gap-1 md:items-center'>
+                    <img className='w-[270px] h-[286px] object-contain md:w-full md:max-w-[290px]' src={catImg4} />
+                    <div className='w-[270px] h-[188px] bg-[#EBEEF3] flex items-center justify-center  md:w-full md:max-w-[270px]'>
                         <img className='w-[210px] h-[78px] object-contain' src={ctImg4} />
                     </div>
                 </div>

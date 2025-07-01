@@ -1,58 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { CiSearch } from "react-icons/ci";
 import { IoMenu, IoClose } from "react-icons/io5";
+export default function Header() {
 
-const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen,setIsOpen]=useState(false)
+  return (
+    <>
+        <header className="shadow-xl  w-full h[60px] bg-light/20 relative py-6 px-5 z-50">
+            <div className="container  flex justify-between py-1 items-center mx-5 ">
+               <h1 className="lg:text-[#EB5E28] text-[#262626ba] lg:text-3xl text-2xl font-semibold font-serif lg:ms-0 ms-7 lg:px-0 ">Sport News</h1 >
 
-    return (
-        <header className='shadow-2xl h-[60px] w-full bg-white z-50 relative'>
-            <div className='container mx-auto flex justify-between items-center h-full px-4'>
-                
-                {/* لوگو */}
-                <h2 className="text-lg font-bold">Sport Snap</h2>
+               <ul className="hidden lg:flex gap-5 cursor-pointer ">
+                    <li className="text-[#EB5E28]">Home</li>
+                    <li className="text-[#262626d9]">Category</li>
+                    <li className="text-[#262626d9]">Trending</li>
+                    <li className="text-[#262626d9]">Recent News</li>
+                    <li className="text-[#262626d9]">Clubs Ranking</li>
+                    <li className="text-[#262626d9]">Sports Article</li>
+               </ul>
 
-                {/* منو دسکتاپ */}
-                <ul className='hidden lg:flex gap-4'>
-                    <li>Home</li>
-                    <li className='text-[#2626269d]'>Category</li>
-                    <li className='text-[#2626269d]'>Trending News</li>
-                    <li className='text-[#2626269d]'>Recent News</li>
-                    <li className='text-[#2626269d]'>Clubs Ranking</li>
-                    <li className='text-[#2626269d]'>Sports Article</li>
-                </ul>
+               <div className="hidden lg:flex ">
+                <button className="cursor-pointer bg-[#EB5E28]/80 text-amber-50 font-semibold flex gap-1 rounded-2xl items-center py-2 px-4">
+                    <CiSearch size={24}/>Search
+                </button>
+               </div>
 
-                {/* دکمه سرچ دسکتاپ */}
-                <div className='hidden lg:flex mt-2'>
-                    <button className='flex items-center gap-3 p-[10px] bg-[#B8C2CE] rounded-lg w-[100px] h-[35px]'>
-                        <CiSearch /> Search
-                    </button>
-                </div>
-
-                {/* منو موبایل */}
-                <div className='lg:hidden flex items-center gap-3'>
-                    <button className='mt-2'>
+               {/* منو موبایل */}
+               <div className="lg:hidden flex gap-5 items-center justify-center me-8">
+                     <button>
                         <CiSearch size={24} />
                     </button>
-                    <button onClick={() => setIsOpen(!isOpen)} className="text-xl">
-                        {isOpen ? <IoClose /> : <IoMenu />}
+                    <button onClick={()=>{setIsOpen(!isOpen)}}>
+                        {isOpen ? <IoClose size={24}/>: <IoMenu color="#EB5E28" size={24}/>}
                     </button>
-                </div>
+               </div>
             </div>
 
             {/* لیست موبایل */}
-            {isOpen && (
-                <ul className='lg:hidden flex flex-col gap-4 px-6 py-4 bg-white border-t border-gray-200'>
-                    <li>Home</li>
-                    <li className='text-[#2626269d]'>Category</li>
-                    <li className='text-[#2626269d]'>Trending News</li>
-                    <li className='text-[#2626269d]'>Recent News</li>
-                    <li className='text-[#2626269d]'>Clubs Ranking</li>
-                    <li className='text-[#2626269d]'>Sports Article</li>
+
+            {isOpen &&(
+                <ul className="flex flex-col py-2 gap-3 text-center font-semibold mt-2 ">
+                    <li className="text-[#EB5E28] py-2  bg-[#EBEEF3] ">Home</li>
+                    <li className="text-[#262626d9] ">Category</li>
+                    <li className="text-[#262626d9] py-2 bg-[#EBEEF3]">Trending</li>
+                    <li className="text-[#262626d9]">Recent News</li>
+                    <li className="text-[#262626d9] py-2 bg-[#EBEEF3]">Clubs Ranking</li>
+                    <li className="text-[#262626d9]">Sports Article</li>
                 </ul>
             )}
         </header>
-    );
-};
-
-export default Header;
+    
+    </>
+  )
+}
