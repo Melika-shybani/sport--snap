@@ -45,10 +45,10 @@ const prevSlide =()=>{
 }
   return (
     <>
-    <div className='flex items-center m-auto lg:w-[1300px] px-3 py-6'>
-        <div className='w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[450px] xl:h-[518px] relative bg-cover bg-center rounded-[10px] overflow-hidden' style={{backgroundImage:`url(${slides[CurrentSlide].image})`}}>
+    <div className='flex items-center m-auto w-full   px-3 py-6'>
+        <div className='container h-[280px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[518px] relative bg-cover bg-center rounded-[10px] overflow-hidden' style={{backgroundImage:`url(${slides[CurrentSlide].image})`}}>
             {/* Belur */}
-            <div className='absolute bg-black/60 inset-0 rounded-[10px]'></div>
+            <div className='absolute bg-black/60 inset-0 rounded-[10px] '></div>
 
 
             <button className="absolute top-3 sm:top-3 md:top-4 left-4 sm:left-3 md:left-4 w-[80px] sm:w-[90px] md:w-[107px] h-[24px] sm:h-[30px] md:h-[36px] rounded-md text-xs sm:text-sm text-[#EBEEF3] font-semibold border-[#EBEEF3] border-[1px] z-20">
@@ -71,8 +71,8 @@ const prevSlide =()=>{
 
 
     <div className='flex items-center m-auto justify-center py-3 gap-5 cursor-pointer'>
-        <div onClick={prevSlide} className='w-[65px] h-[45px] rounded-[7px] bg-[#00000036] items-center flex justify-center text-[#EBEEF3]' >
-            <FaLongArrowAltLeft size={23}/>
+        <div onClick={prevSlide} className='w-[60px] h-[40px] rounded-[7px] bg-[#00000036] items-center flex justify-center text-[#EBEEF3]' >
+            <FaLongArrowAltLeft size={20}/>
         </div>
 
         {slides.map((_,index)=>(
@@ -82,8 +82,8 @@ const prevSlide =()=>{
             </p>
         ))}
 
-         <div onClick={nextSlide} className='w-[65px] h-[45px] rounded-[7px] bg-[#00000084] text-[#EBEEF3]  items-center flex justify-center cursor-pointer ' >
-            <FaLongArrowAltRight size={23}/>
+         <div onClick={nextSlide} className='w-[60px] h-[40px] rounded-[7px] bg-[#00000084] text-[#EBEEF3]  items-center flex justify-center cursor-pointer ' >
+            <FaLongArrowAltRight size={20}/>
         </div>
     </div>
     </>
