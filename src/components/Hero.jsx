@@ -4,9 +4,15 @@ import HeroText from '../assets/hero-text.png'
 import BasketPlayer from "../assets/basketball-player.png";
 import newsData from '../data';
 import { Link } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
 
+
+    // const navigate = useNavigate();
+    // const handleClick = (id) => {
+    //     navigate(`/blog/${id}`);
+    // };
     const filteredNews=newsData.filter(card=> card.id===1 || card.id===2 );
   return (
     <>

@@ -15,7 +15,7 @@ const BlogDetails = () => {
         <>
         <Header/>
         <div className='flex justify-center mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32
-         my-8 sm:my-12 md:my-16 lg:my-20 xl:my-32'>
+         my-8 sm:my-12 md:my-16 lg:my-20 xl:my-32 shadow-2xl py-7 '>
             <div className='w-full max-w-[900px]'>
                 {/* Title and Metadata */}
                 <div className='mb-6'>

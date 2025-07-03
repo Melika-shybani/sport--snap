@@ -37,7 +37,7 @@ export default function Header() {
             </div>
 
             {/* لیست موبایل */}
-
+            
             {isOpen &&(
                 <ul className="flex flex-col py-2 gap-3 text-center font-semibold mt-2 ">
                     <li className="text-[#EB5E28] py-2  bg-[#EBEEF3] ">Home</li>
