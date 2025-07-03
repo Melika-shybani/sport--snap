@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import newsData from "../data.js";
 
 const Article = () => {
-    const filteredNews = newsData.filter(item => item.id >= 7 && item.id <= 9);
-
+    
+    const filteredNews=newsData.filter(item=> item.id >=7 && item.id <=9)
     return (
         <div className='mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32 my-8 sm:my-12 md:my-16 lg:my-20 xl:my-32'>
             <div className='flex flex-col md:flex-row gap-4 sm:gap-5'>

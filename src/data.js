@@ -191,6 +191,7 @@ const newsData = [
         desc_part5:"Outdoor badminton represents an exciting evolution of the traditional sport, offering a fresh and inclusive way to enjoy the game. With the backing of the local badminton federation, this new format is gaining momentum and attracting a diverse range of players. By taking badminton out of the indoor courts and into the open air, the sport is becoming more accessible, engaging, and fun for everyone. As outdoor badminton continues to grow, it has the potential to transform the way we think about and play this beloved sport.",
         title_part5:"Conclusion:",
     },
+    
 ];
 
 export default newsData
