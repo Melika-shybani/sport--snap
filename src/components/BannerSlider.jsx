@@ -77,7 +77,7 @@ const prevSlide =()=>{
 
         {slides.map((_,index)=>(
             <p key={index} onClick={()=>SetCurrentSlide(index)} className={`cursor-pointer items-center text-xl font-semibold flex justify-center rounded-full  w-[40px] h-[40px] 
-             ${index===CurrentSlide ?'text-[#EBEEF3] bg-[#EB5E28]' : 'text-[#EBEEF3] bg-[#00000036]' } `}>
+             ${index===CurrentSlide ?'text-[#EBEEF3] bg-[#EB5E28]' : 'text-[#00000036] border-[#00000036] outline-3' } `}>
                 {index+1}
             </p>
         ))}

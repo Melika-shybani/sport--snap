@@ -19,7 +19,7 @@ const Category = () => {
                     </div>
                     <img className='w-[270px] h-[288px] object-contain md:w-full md:max-w-[270px]' src={catImg1} />
                 </div>
-                <div className='md:flex md:flex-col md:items-center  '>
+                <div className='md:flex md:flex-col md:items-center'>
                     <img className='w-[270px] h-[235px] object-contain md:w-full md:max-w-[270px]' src={catImg2} />
                     <div className='w-[270px] h-[116px] bg-[#EBEEF3] flex items-center justify-center my-4 md:w-full md:max-w-[270px]'>
                         <img className='w-[203px] h-[75px] object-contain' src={ctImg2} />
