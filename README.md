@@ -32,4 +32,4 @@ If you are developing a production application, we recommend using TypeScript an
 اخطار: در صورت انجام ندادن این کار دو  بخش پروژه  مطالب داخل ان برای شما نمایش  داده نمی شود  
 
 
-✌️. پروژه رو با دستور `npm run dev` اجرا کنید.
+

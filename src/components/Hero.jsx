@@ -16,7 +16,7 @@ export default function Hero() {
     const filteredNews=newsData.filter(card=> card.id===1 || card.id===2 );
   return (
     <>
-        <div className='bg-left bg-no-repeat w-[100vw] overflow-hidden flex gap-5 m-auto justify-center  flex-wrap  px-7 py-16 ' style={{backgroundImage:`url(${basket})` }}>
+        <div className='bg-left bg-no-repeat w-[100vw] overflow-hidden flex gap-5 m-auto justify-center  flex-wrap  px-7 py-45 ' style={{backgroundImage:`url(${basket})` }}>
 
             {/* متن سمت چپ  */}
    

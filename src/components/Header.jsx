@@ -6,8 +6,8 @@ export default function Header() {
     const [isOpen,setIsOpen]=useState(false)
   return (
     <>
-        <header className="shadow-xl  w-full h[60px] bg-light/20 relative py-6 px-5 z-50">
-            <div className="container  flex justify-between py-1 items-center mx-5 ">
+        <header className="shadow-xl  w-full h[60px] bg-light/20  py-6 px-5 z-50 fixed top-0 left-0 bg-[#f8f8f8]">
+            <div className="container  flex justify-between py-1 items-center mx-auto ">
                <h1 className="lg:text-[#EB5E28] text-[#262626ba] lg:text-3xl text-2xl font-semibold font-serif lg:ms-0 ms-7 lg:px-0 ">Sport News</h1 >
 
                <ul className="hidden lg:flex gap-5 cursor-pointer ">
