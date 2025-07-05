@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Category from '../components/Category';
@@ -7,38 +7,41 @@ import BannerSlider from '../components/BannerSlider';
 import ClubRanking from '../components/ClubRanking';
 import Article from '../components/Article';
 import NewsLetter from '../components/NewsLetter';
-import 
+import Lottie from 'lottie-react';
+import loderBasketball from '../assets/loaderBasketball.json'; 
+
 const Home = () => {
-    const[Loading,SetLoading]=useState(true)
+  const [Loading, SetLoading] = useState(true);
 
-    React.useEffect(() => {
-        
-        const timer = setTimeout(() => {
-            SetLoading(false); 
-        }, 2000); 
-        return () => clearTimeout(timer); 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      SetLoading(false);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
-    }, []);
-
-    return (
-        
+  return (
+    <>
+      {Loading ? (
+        <div className="w-full h-screen flex items-center justify-center ">
+          <div className="w-[470px] h-[380px] ">
+            <Lottie animationData={loderBasketball} loop={true} />
+          </div>
+        </div>
+      ) : (
         <>
-           {Loading ? (
-                <p className="text-center text-gray-600"> <DNA/> </p> // لودر ساده
-            ) : (
-                <>
-                    <Header />
-                    <Hero />
-                    <Category />
-                    <TrendingNews />
-                    <BannerSlider />
-                    <ClubRanking />
-                    <Article />
-                    <NewsLetter />
-                </>
-            )}
+          <Header />
+          <Hero />
+          <Category />
+          <TrendingNews />
+          <BannerSlider />
+          <ClubRanking />
+          <Article />
+          <NewsLetter />
         </>
-    );
-}
+      )}
+    </>
+  );
+};
 
 export default Home;
