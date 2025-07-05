@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 
 const SportsNews = () => {
   const [news, setNews] = useState([]);
-  const apiKey = import.meta.env.VITE_NEWS_API_KEY;
+  const apiKey = 'pub_7b0e3f0b1182424898a4d6b79d8229f3'; // کلید API رو اینجا مستقیم گذاشتم (برای تست)
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/everything?q=sports&apiKey=${apiKey}`
+          `https://newsdata.io/api/1/latest?apikey=${apiKey}&q=BASKETBALL`
         );
-        setNews(response.data.articles);
+        setNews(response.data.results); // NewsData.io داده‌ها رو توی "results" برمی‌گردونه
       } catch (error) {
         console.error('Error fetching news:', error);
       }
@@ -32,9 +32,9 @@ const SportsNews = () => {
             key={index}
             className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
-            {article.urlToImage ? (
+            {article.image_url ? ( // NewsData.io از "image_url" استفاده می‌کنه
               <img
-                src={article.urlToImage}
+                src={article.image_url}
                 alt={article.title}
                 className="w-full h-48 object-cover"
               />

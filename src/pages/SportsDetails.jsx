@@ -26,7 +26,7 @@ const SportsDetails = () => {
           href={article.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="block mt-4 text-blue-600 hover:underline"
+          className="block mt-4 text-blue-600 hover:underline cursor-pointer"
         >
           مطالعه کامل در منبع
         </a>
