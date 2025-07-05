@@ -71,18 +71,18 @@ const prevSlide =()=>{
 
 
     <div className='flex items-center m-auto justify-center py-3 gap-5 cursor-pointer'>
-        <div onClick={prevSlide} className='w-[60px] h-[40px] rounded-[7px] bg-[#00000036] items-center flex justify-center text-[#EBEEF3]' >
+        <div onClick={prevSlide} className='w-[60px] h-[40px] rounded-[5px] bg-[#00000036] items-center flex justify-center text-[#EBEEF3]' >
             <FaLongArrowAltLeft size={20}/>
         </div>
 
         {slides.map((_,index)=>(
             <p key={index} onClick={()=>SetCurrentSlide(index)} className={`cursor-pointer items-center text-xl font-semibold flex justify-center rounded-full  w-[40px] h-[40px] 
-             ${index===CurrentSlide ?'text-[#EBEEF3] bg-[#EB5E28]' : 'text-[#00000036] border-[#00000036] outline-3' } `}>
+             ${index===CurrentSlide ?'text-[#EBEEF3] bg-[#EB5E28]' : 'text-[#00000061] border-[#00000036] outline-2' } `}>
                 {index+1}
             </p>
         ))}
 
-         <div onClick={nextSlide} className='w-[60px] h-[40px] rounded-[7px] bg-[#00000084] text-[#EBEEF3]  items-center flex justify-center cursor-pointer ' >
+         <div onClick={nextSlide} className='w-[60px] h-[40px] rounded-[5px] bg-[#0000007e] text-[#EBEEF3]  items-center flex justify-center cursor-pointer ' >
             <FaLongArrowAltRight size={20}/>
         </div>
     </div>
