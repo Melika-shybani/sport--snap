@@ -23,6 +23,13 @@ If you are developing a production application, we recommend using TypeScript an
 
 ## پیش‌نیازها
 
+
+احتمالا در ابتدای نصب ارور داشته باشید   برای حل این ارور باید این دستور زیر را اجرا کنید   
+
+npm i lottie-react --legacy-peer-deps
+
+
+
 برای استفاده از این پروژه، نیاز به کلید API از موارد زیر دارید:
 - [football-data.org](https://www.football-data.org/client/register) برای جدول لیگ‌ها
 - [newsdata.io](https://newsdata.io/search-news) برای اخبار
