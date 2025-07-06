@@ -28,7 +28,7 @@ If you are developing a production application, we recommend using TypeScript an
 
 npm i lottie-react --legacy-peer-deps
 
-
+<!-- 
 
 برای استفاده از این پروژه، نیاز به کلید API از موارد زیر دارید:
 - [football-data.org](https://www.football-data.org/client/register) برای جدول لیگ‌ها
@@ -36,7 +36,7 @@ npm i lottie-react --legacy-peer-deps
 کلیدها رو توی فایل `.env` با نام‌های `VITE_FOOTBALL_API_KEY` و `VITE_NEWS_API_KEY` تنظیم کنید.
 
 ☠️☠️☠️
-اخطار: در صورت انجام ندادن این کار دو  بخش پروژه  مطالب داخل ان برای شما نمایش  داده نمی شود  
+اخطار: در صورت انجام ندادن این کار دو  بخش پروژه  مطالب داخل ان برای شما نمایش  داده نمی شود   -->
 
 
 
